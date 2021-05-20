@@ -1,0 +1,3 @@
+/Users/rootuser/Desktop/DBS311NFF/AS2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/rootuser/Desktop/DBS311NFF/AS2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/rootuser/Desktop/DBS311NFF/AS2/cmake-build-debug/CMakeFiles/AS2.dir

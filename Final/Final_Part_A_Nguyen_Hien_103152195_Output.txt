@@ -1,0 +1,524 @@
+
+Table EMPLOYEE created.
+
+
+Table STAFF created.
+
+
+Dep Occupati Employ Compensation        
+--- -------- ------ --------------------
+A00 CLERK    000120           $52,190.00
+A00 PRES     000010          $157,970.00
+A00 SALESREP 000110           $71,120.00
+B01 MANAGER  000020           $98,350.00
+C01 ANALYST  000130           $76,204.00
+C01 MANAGER  000030          $102,110.00
+D11 DESIGNER 200220           $72,827.00
+D11 MANAGER  000060           $75,330.00
+D21 CLERK    000240           $51,661.00
+D21 MANAGER  000070           $99,763.00
+E01 MANAGER  000050           $84,189.00
+
+Dep Occupati Employ Compensation        
+--- -------- ------ --------------------
+E11 MANAGER  000090           $92,730.00
+E11 OPERATOR 200280           $48,850.00
+E21 FIELDREP 000330           $47,900.00
+E21 MANAGER  000100           $88,742.00
+
+15 rows selected. 
+
+
+Last Name      
+---------------
+Abrahams
+Adamson
+Alonzo
+Brown
+Burke
+Daniels
+Davis
+Edwards
+Fraye
+Gafney
+Geyer
+
+Last Name      
+---------------
+Gonzales
+Gounot
+Graham
+Haas
+Hanes
+Hemminger
+Henderson
+James
+Jefferson
+John
+Johnson
+
+Last Name      
+---------------
+Jones
+Kermisch
+Koonitz
+Kwan
+Lea
+Lee
+Lu
+Lucchessi
+Lundquist
+Lutz
+Marenghi
+
+Last Name      
+---------------
+Marino
+Mehta
+Molinare
+Monteverde
+Natz
+Naughton
+Ngan
+Nicholls
+O'Brien
+O'Connell
+Orlando
+
+Last Name      
+---------------
+Parker
+Perez
+Pernal
+Pianka
+Plotz
+Pulaski
+Quigley
+Quill
+Quintana
+Rothman
+Sanders
+
+Last Name      
+---------------
+Schneider
+Schwartz
+Scoutten
+Setright
+Smith
+Sneider
+Spenser
+Springer
+Stern
+Thompson
+Walker
+
+Last Name      
+---------------
+Wheeler
+Williams
+Wilson
+Wong
+Yamaguchi
+Yamamoto
+Yoshimura
+
+73 rows selected. 
+
+
+Employee Number Last Name      
+--------------- ---------------
+             10 Haas           
+             10 Sanders        
+             20 Pernal         
+             20 Thompson       
+             30 Kwan           
+             30 Marenghi       
+             50 Geyer          
+             50 Hanes          
+             60 Quigley        
+             60 Stern          
+             70 Pulaski        
+
+Employee Number Last Name      
+--------------- ---------------
+             70 Rothman        
+             90 Henderson      
+             90 Koonitz        
+            100 Plotz          
+            100 Spenser        
+            110 Lucchessi      
+            110 Ngan           
+            120 Naughton       
+            120 O'Connell      
+            130 Quintana       
+            130 Yamaguchi      
+
+Employee Number Last Name      
+--------------- ---------------
+            140 Fraye          
+            140 Nicholls       
+            150 Adamson        
+            150 Williams       
+            160 Molinare       
+            160 Pianka         
+            170 Kermisch       
+            170 Yoshimura      
+            180 Abrahams       
+            180 Scoutten       
+            190 Sneider        
+
+Employee Number Last Name      
+--------------- ---------------
+            190 Walker         
+            200 Brown          
+            200 Scoutten       
+            210 Jones          
+            210 Lu             
+            220 Lutz           
+            220 Smith          
+            230 Jefferson      
+            230 Lundquist      
+            240 Daniels        
+            240 Marino         
+
+Employee Number Last Name      
+--------------- ---------------
+            250 Smith          
+            250 Wheeler        
+            260 Johnson        
+            260 Jones          
+            270 Lea            
+            270 Perez          
+            280 Schneider      
+            280 Wilson         
+            290 Parker         
+            290 Quill          
+            300 Davis          
+
+Employee Number Last Name      
+--------------- ---------------
+            300 Smith          
+            310 Graham         
+            310 Setright       
+            320 Gonzales       
+            320 Mehta          
+            330 Burke          
+            330 Lee            
+            340 Edwards        
+            340 Gounot         
+
+64 rows selected. 
+
+
+Last Name      
+---------------
+Alonzo
+Gonzales
+Koonitz
+Lutz
+Natz
+Perez
+Plotz
+Schwartz
+
+8 rows selected. 
+
+
+Dep Manager Compensation Employee Compensatio
+--- -------------------- --------------------
+D11           $75,330.00           $72,827.00
+
+
+Last Name       Variable Pay        
+--------------- --------------------
+Abrahams                     $236.50
+Adamson                    $2,522.00
+Alonzo                     $2,407.00
+Brown                      $2,817.00
+Burke                         $55.50
+Daniels                         $.00
+Davis                        $806.10
+Edwards                    $1,285.00
+Fraye                           $.00
+Gafney                       $188.00
+Geyer                      $4,014.00
+
+Last Name       Variable Pay        
+--------------- --------------------
+Gonzales                     $844.00
+Gounot                     $2,407.00
+Graham                       $200.30
+Haas                       $5,220.00
+Hanes                           $.00
+Hemminger                  $5,220.00
+Henderson                  $2,980.00
+James                        $128.20
+Jefferson                  $2,174.00
+John                       $2,987.00
+Johnson                    $1,680.00
+
+Last Name       Variable Pay        
+--------------- --------------------
+Jones                      $1,862.00
+Jones                           $.00
+Kermisch                     $110.10
+Koonitz                    $1,386.70
+Kwan                       $3,860.00
+Lea                             $.00
+Lee                        $2,530.00
+Lu                              $.00
+Lucchessi                  $4,620.00
+Lundquist                    $189.65
+Lutz                       $2,987.00
+
+Last Name       Variable Pay        
+--------------- --------------------
+Marenghi                        $.00
+Marino                     $2,901.00
+Mehta                      $1,996.00
+Molinare                        $.00
+Monteverde                 $2,901.00
+Natz                       $2,874.00
+Naughton                     $180.00
+Ngan                         $206.60
+Nicholls                   $2,874.00
+O'Brien                      $846.55
+O'Connell                  $2,940.00
+
+Last Name       Variable Pay        
+--------------- --------------------
+Orlando                    $2,940.00
+Parker                     $1,527.00
+Perez                      $2,690.00
+Pernal                       $612.45
+Pianka                     $2,180.00
+Plotz                           $.00
+Pulaski                    $3,593.00
+Quigley                      $650.25
+Quill                           $.00
+Quintana                   $2,404.00
+Rothman                    $1,152.00
+
+Last Name       Variable Pay        
+--------------- --------------------
+Sanders                         $.00
+Schneider                  $2,600.00
+Schwartz                   $2,600.00
+Scoutten                   $2,207.00
+Scoutten                      $84.20
+Setright                   $1,572.00
+Smith                        $992.80
+Smith                      $1,934.00
+Smith                      $1,820.00
+Sneider                      $126.50
+Spenser                    $2,592.00
+
+Last Name       Variable Pay        
+--------------- --------------------
+Springer                   $1,572.00
+Stern                      $3,080.00
+Thompson                   $4,100.00
+Walker                     $2,036.00
+Wheeler                      $513.30
+Williams                     $637.65
+Wilson                       $811.50
+Wong                       $2,530.00
+Yamaguchi                     $75.60
+Yamamoto                   $2,474.00
+Yoshimura                  $2,474.00
+
+77 rows selected. 
+
+
+Procedure UPDATE_COMPENSATION compiled
+
+Employee ID 000010
+Old Salary 152750
+Old Bonus 1000
+Old Commission 4220
+New Salary 162750
+New Bonus 1300
+New Commission 7275
+Employee ID 000010
+Old Salary 162750
+Old Bonus 1300
+Old Commission 7275
+New Salary 167750
+New Bonus 1500
+New Commission 10530
+Employee ID 000010
+Old Salary 167750
+Old Bonus 1500
+Old Commission 10530
+New Salary 177750
+New Bonus 1800
+New Commission 
+Invalid Employee ID
+Employee record can not be found
+Invalid rating number
+Rating number must be between 1 and 3
+
+
+PL/SQL procedure successfully completed.
+
+
+Procedure UPDATE_EDUCATION_LEVEL compiled
+
+Employee ID 000100
+Old Education 14
+New Education 16
+Employee ID 000100
+Old Education 16
+New Education 19
+Employee ID 000100
+Old Education 19
+New Education 20
+Employee ID 000100
+Old Education 20
+New Education 23
+Employee ID 000100
+Old Education 23
+New Education 25
+Invalid educational level
+Educational level is not expected
+Accepted educational level are: 
+H - High School Diploma
+C - College Diploma
+U - University Degree
+M - Master
+P - PhD
+Invalid Employee ID
+Employee record can not be found
+Invalid educational level
+Given educational level is lower than current level
+
+
+PL/SQL procedure successfully completed.
+
+
+Function PHONE compiled
+
+
+Table EMPLOYEE altered.
+
+
+Procedure UPDATE_PHONE_NUMBER compiled
+
+Department E01
+Employee ID 000050
+Phone Number 6789
+Full Phone Number (416) 123-6789
+Department E11
+Employee ID 000090
+Phone Number 5498
+Full Phone Number (416) 123-5498
+Department E21
+Employee ID 000100
+Phone Number 0972
+Full Phone Number (416) 123-0972
+Department E11
+Employee ID 000280
+Phone Number 8997
+Full Phone Number (416) 123-8997
+Department E11
+Employee ID 000290
+Phone Number 4502
+Full Phone Number (416) 123-4502
+Department E11
+Employee ID 000300
+Phone Number 2095
+Full Phone Number (416) 123-2095
+Department E11
+Employee ID 000310
+Phone Number 3332
+Full Phone Number (416) 123-3332
+Department E21
+Employee ID 000320
+Phone Number 9990
+Full Phone Number (416) 123-9990
+Department E21
+Employee ID 000330
+Phone Number 2103
+Full Phone Number (416) 123-2103
+Department E21
+Employee ID 000340
+Phone Number 5698
+Full Phone Number (416) 123-5698
+Department E11
+Employee ID 200280
+Phone Number 8997
+Full Phone Number (416) 123-8997
+Department E11
+Employee ID 200310
+Phone Number 3332
+Full Phone Number (416) 123-3332
+Department E21
+Employee ID 200330
+Phone Number 2103
+Full Phone Number (416) 123-2103
+Department E21
+Employee ID 200340
+Phone Number 5698
+Full Phone Number (416) 123-5698
+
+
+PL/SQL procedure successfully completed.
+
+
+WOR PHON PHONENUM      
+--- ---- --------------
+A00 3978               
+B01 3476               
+C01 4738               
+E01 6789 (416) 123-6789
+D11 6423               
+D21 7831               
+E11 5498 (416) 123-5498
+E21 0972 (416) 123-0972
+A00 3490               
+A00 2167               
+C01 4578               
+
+WOR PHON PHONENUM      
+--- ---- --------------
+C01 1793               
+D11 4510               
+D11 3782               
+D11 2890               
+D11 1682               
+D11 2986               
+D11 4501               
+D11 0942               
+D11 0672               
+D21 2094               
+D21 3780               
+
+WOR PHON PHONENUM      
+--- ---- --------------
+D21 0961               
+D21 8953               
+D21 9001               
+E11 8997 (416) 123-8997
+E11 4502 (416) 123-4502
+E11 2095 (416) 123-2095
+E11 3332 (416) 123-3332
+E21 9990 (416) 123-9990
+E21 2103 (416) 123-2103
+E21 5698 (416) 123-5698
+A00 3978               
+
+WOR PHON PHONENUM      
+--- ---- --------------
+A00 2167               
+C01 1793               
+D11 2890               
+D11 0672               
+D21 3780               
+E11 8997 (416) 123-8997
+E11 3332 (416) 123-3332
+E21 2103 (416) 123-2103
+E21 5698 (416) 123-5698
+
+42 rows selected. 
+

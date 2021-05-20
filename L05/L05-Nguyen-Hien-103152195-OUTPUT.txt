@@ -1,0 +1,30 @@
+
+Procedure EVEN_OR_ODD compiled
+
+
+Procedure FIND_EMPLOYEE compiled
+
+
+Procedure UPDATE_PRICE_BY_CAT compiled
+
+
+Procedure UPDATE_PRICE_UNDER_AVG compiled
+
+
+Procedure PRODUCT_PRICE_REPORT compiled
+
+The number is even.
+First name: Summer
+Last name: Payne
+Email: summer.payne@example.com
+Phone: 515.123.8181
+Hire date: 07-JUN-16
+Job title: Public Accountant
+70 rows were updated
+199 rows were updated
+Cheap: 84
+Fair: 201
+Expensive: 3
+
+
+PL/SQL procedure successfully completed.

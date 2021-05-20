@@ -1,0 +1,603 @@
+Question 1:
+db.music.find().pretty();
+{
+	"_id" : ObjectId("608335f3f08caa048f4ad198"),
+	"artist" : "Pink Floyd",
+	"albums" : [
+		{
+			"title" : "The Dark Side of the Moon",
+			"year" : 1973
+		},
+		{
+			"title" : "The Wall",
+			"year" : 1979
+		},
+		{
+			"title" : "The Division Bell",
+			"year" : 1994
+		},
+		{
+			"title" : "Animals",
+			"year" : 1977
+		},
+		{
+			"title" : "Wish You Were Here",
+			"year" : 1975
+		}
+	],
+	"singers" : "David Gilmore and Roger Waters"
+}
+{
+	"_id" : ObjectId("608335f3f08caa048f4ad199"),
+	"artist" : "Led Zeppelin",
+	"albums" : [
+		{
+			"title" : "Led Zeppelin I",
+			"year" : 1969
+		},
+		{
+			"title" : "Led Zeppelin 2",
+			"year" : 1969
+		},
+		{
+			"title" : "Led Zeppelin 3",
+			"year" : 1970
+		},
+		{
+			"title" : "Led Zeppelin 4",
+			"year" : 1971
+		}
+	],
+	"singers" : "Robert Plant"
+}
+{
+	"_id" : ObjectId("608335f3f08caa048f4ad19a"),
+	"artist" : "AC/DC",
+	"albums" : [
+		{
+			"title" : "High Voltage",
+			"year" : 1976
+		},
+		{
+			"title" : "Back in Black",
+			"year" : 1980
+		},
+		{
+			"title" : "Dirty Deeds Done Dirt Cheap",
+			"year" : 1976
+		},
+		{
+			"title" : "Highway to Hell",
+			"year" : 1979
+		}
+	],
+	"singers" : "Bon Scott"
+}
+{
+	"_id" : ObjectId("608335f3f08caa048f4ad19b"),
+	"artist" : "Rush",
+	"albums" : [
+		{
+			"title" : "A Farewell to Kings",
+			"year" : 1977
+		},
+		{
+			"title" : "Moving Pictures",
+			"year" : 1981
+		},
+		{
+			"title" : "2112",
+			"year" : 1976
+		},
+		{
+			"title" : "Fly By Night",
+			"year" : 1975
+		}
+	],
+	"singers" : "Geddy Lee"
+}
+
+Question 2:
+db.music.insertOne({
+...     artist: "Scorpions",
+...     albums: [
+...         {title: "Lovedrive", year: 1979},
+...         {title: "Blackout", year: 1982},
+...         {title: "Love at first sting", year: 1984},
+...         {title: "Eye to Eye", year: 1999}
+...     ],
+...     singers: "Klaus Meine"
+... });
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("6083376752c9e4bdfca1d7aa")
+}
+
+db.music.find().pretty();
+{
+	"_id" : ObjectId("608335f3f08caa048f4ad198"),
+	"artist" : "Pink Floyd",
+	"albums" : [
+		{
+			"title" : "The Dark Side of the Moon",
+			"year" : 1973
+		},
+		{
+			"title" : "The Wall",
+			"year" : 1979
+		},
+		{
+			"title" : "The Division Bell",
+			"year" : 1994
+		},
+		{
+			"title" : "Animals",
+			"year" : 1977
+		},
+		{
+			"title" : "Wish You Were Here",
+			"year" : 1975
+		}
+	],
+	"singers" : "David Gilmore and Roger Waters"
+}
+{
+	"_id" : ObjectId("608335f3f08caa048f4ad199"),
+	"artist" : "Led Zeppelin",
+	"albums" : [
+		{
+			"title" : "Led Zeppelin I",
+			"year" : 1969
+		},
+		{
+			"title" : "Led Zeppelin 2",
+			"year" : 1969
+		},
+		{
+			"title" : "Led Zeppelin 3",
+			"year" : 1970
+		},
+		{
+			"title" : "Led Zeppelin 4",
+			"year" : 1971
+		}
+	],
+	"singers" : "Robert Plant"
+}
+{
+	"_id" : ObjectId("608335f3f08caa048f4ad19a"),
+	"artist" : "AC/DC",
+	"albums" : [
+		{
+			"title" : "High Voltage",
+			"year" : 1976
+		},
+		{
+			"title" : "Back in Black",
+			"year" : 1980
+		},
+		{
+			"title" : "Dirty Deeds Done Dirt Cheap",
+			"year" : 1976
+		},
+		{
+			"title" : "Highway to Hell",
+			"year" : 1979
+		}
+	],
+	"singers" : "Bon Scott"
+}
+{
+	"_id" : ObjectId("608335f3f08caa048f4ad19b"),
+	"artist" : "Rush",
+	"albums" : [
+		{
+			"title" : "A Farewell to Kings",
+			"year" : 1977
+		},
+		{
+			"title" : "Moving Pictures",
+			"year" : 1981
+		},
+		{
+			"title" : "2112",
+			"year" : 1976
+		},
+		{
+			"title" : "Fly By Night",
+			"year" : 1975
+		}
+	],
+	"singers" : "Geddy Lee"
+}
+{
+	"_id" : ObjectId("6083376752c9e4bdfca1d7aa"),
+	"artist" : "Scorpions",
+	"albums" : [
+		{
+			"title" : "Lovedrive",
+			"year" : 1979
+		},
+		{
+			"title" : "Blackout",
+			"year" : 1982
+		},
+		{
+			"title" : "Love at first sting",
+			"year" : 1984
+		},
+		{
+			"title" : "Eye to Eye",
+			"year" : 1999
+		}
+	],
+	"singers" : "Klaus Meine"
+}
+
+Question 3:
+db.music.find(
+...     {albums: {$elemMatch: {$or: [
+...         {year: {$gte: 1960, $lte: 1969}},
+...         {year: {$gte: 1990, $lte: 1999}}
+...     ]}}},
+...     {artist: 1,
+...      albums: {$elemMatch: {$or: [
+...         {year: {$gte: 1960, $lte: 1969}},
+...         {year: {$gte: 1990, $lte: 1999}}
+...     ]}},
+... _id: 0}).pretty();
+{
+	"artist" : "Pink Floyd",
+	"albums" : [
+		{
+			"title" : "The Division Bell",
+			"year" : 1994
+		}
+	]
+}
+{
+	"artist" : "Led Zeppelin",
+	"albums" : [
+		{
+			"title" : "Led Zeppelin I",
+			"year" : 1969
+		}
+	]
+}
+{
+	"artist" : "Scorpions",
+	"albums" : [
+		{
+			"title" : "Eye to Eye",
+			"year" : 1999
+		}
+	]
+}
+
+Question 4:
+const years = [1971, 1973, 1975, 1977, 1979];
+db.music.find({}, {artist: 1, albums: {$elemMatch: {year: {$in: years}}}, _id: 0}).pretty();
+{
+	"artist" : "Pink Floyd",
+	"albums" : [
+		{
+			"title" : "The Dark Side of the Moon",
+			"year" : 1973
+		}
+	]
+}
+{
+	"artist" : "Led Zeppelin",
+	"albums" : [
+		{
+			"title" : "Led Zeppelin 4",
+			"year" : 1971
+		}
+	]
+}
+{
+	"artist" : "AC/DC",
+	"albums" : [
+		{
+			"title" : "Highway to Hell",
+			"year" : 1979
+		}
+	]
+}
+{
+	"artist" : "Rush",
+	"albums" : [
+		{
+			"title" : "A Farewell to Kings",
+			"year" : 1977
+		}
+	]
+}
+{
+	"artist" : "Scorpions",
+	"albums" : [
+		{
+			"title" : "Lovedrive",
+			"year" : 1979
+		}
+	]
+}
+
+Question 5:
+db.music.updateOne({artist: "Rush"}, {$set: {Guitarist: "Alex Lifeson"}});
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+db.music.updateOne({artist: "Scorpions"}, {$set: {Guitarist: "Mathias Jabs"}});
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+db.music.updateOne({artist: "AC/DC"}, {$set: {Guitarist: "Malcolm Young"}});
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+db.music.updateOne({artist: "Pink Floyd"}, {$set: {Guitarist: ["David Gilmore", "Roger Waters"]}});
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+db.music.updateOne({artist: "Led Zeppelin"}, {$set: {Guitarist: "Jimmy Page"}});
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+
+db.music.find().pretty();
+{
+	"_id" : ObjectId("608335f3f08caa048f4ad198"),
+	"artist" : "Pink Floyd",
+	"albums" : [
+		{
+			"title" : "The Dark Side of the Moon",
+			"year" : 1973
+		},
+		{
+			"title" : "The Wall",
+			"year" : 1979
+		},
+		{
+			"title" : "The Division Bell",
+			"year" : 1994
+		},
+		{
+			"title" : "Animals",
+			"year" : 1977
+		},
+		{
+			"title" : "Wish You Were Here",
+			"year" : 1975
+		}
+	],
+	"singers" : "David Gilmore and Roger Waters",
+	"Guitarist" : [
+		"David Gilmore",
+		"Roger Waters"
+	]
+}
+{
+	"_id" : ObjectId("608335f3f08caa048f4ad199"),
+	"artist" : "Led Zeppelin",
+	"albums" : [
+		{
+			"title" : "Led Zeppelin I",
+			"year" : 1969
+		},
+		{
+			"title" : "Led Zeppelin 2",
+			"year" : 1969
+		},
+		{
+			"title" : "Led Zeppelin 3",
+			"year" : 1970
+		},
+		{
+			"title" : "Led Zeppelin 4",
+			"year" : 1971
+		}
+	],
+	"singers" : "Robert Plant",
+	"Guitarist" : "Jimmy Page"
+}
+{
+	"_id" : ObjectId("608335f3f08caa048f4ad19a"),
+	"artist" : "AC/DC",
+	"albums" : [
+		{
+			"title" : "High Voltage",
+			"year" : 1976
+		},
+		{
+			"title" : "Back in Black",
+			"year" : 1980
+		},
+		{
+			"title" : "Dirty Deeds Done Dirt Cheap",
+			"year" : 1976
+		},
+		{
+			"title" : "Highway to Hell",
+			"year" : 1979
+		}
+	],
+	"singers" : "Bon Scott",
+	"Guitarist" : "Malcolm Young"
+}
+{
+	"_id" : ObjectId("608335f3f08caa048f4ad19b"),
+	"artist" : "Rush",
+	"albums" : [
+		{
+			"title" : "A Farewell to Kings",
+			"year" : 1977
+		},
+		{
+			"title" : "Moving Pictures",
+			"year" : 1981
+		},
+		{
+			"title" : "2112",
+			"year" : 1976
+		},
+		{
+			"title" : "Fly By Night",
+			"year" : 1975
+		}
+	],
+	"singers" : "Geddy Lee",
+	"Guitarist" : "Alex Lifeson"
+}
+{
+	"_id" : ObjectId("6083376752c9e4bdfca1d7aa"),
+	"artist" : "Scorpions",
+	"albums" : [
+		{
+			"title" : "Lovedrive",
+			"year" : 1979
+		},
+		{
+			"title" : "Blackout",
+			"year" : 1982
+		},
+		{
+			"title" : "Love at first sting",
+			"year" : 1984
+		},
+		{
+			"title" : "Eye to Eye",
+			"year" : 1999
+		}
+	],
+	"singers" : "Klaus Meine",
+	"Guitarist" : "Mathias Jabs"
+}
+
+Question 6:
+db.music.find({artist: "Scorpions"}, {albums: 1, _id: 0}).pretty();
+{
+	"albums" : [
+		{
+			"title" : "Lovedrive",
+			"year" : 1979
+		},
+		{
+			"title" : "Blackout",
+			"year" : 1982
+		},
+		{
+			"title" : "Love at first sting",
+			"year" : 1984
+		},
+		{
+			"title" : "Eye to Eye",
+			"year" : 1999
+		}
+	]
+}
+
+db.music.updateMany({artist: "Scorpions"}, {$inc: {"albums.$[].year": 5}});
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+
+db.music.find({artist: "Scorpions"}, {albums: 1, _id: 0}).pretty();
+{
+	"albums" : [
+		{
+			"title" : "Lovedrive",
+			"year" : 1984
+		},
+		{
+			"title" : "Blackout",
+			"year" : 1987
+		},
+		{
+			"title" : "Love at first sting",
+			"year" : 1989
+		},
+		{
+			"title" : "Eye to Eye",
+			"year" : 2004
+		}
+	]
+}
+
+Question 7:
+db.music.findOneAndDelete({artist: "Scorpions"});
+{
+	"_id" : ObjectId("6083376752c9e4bdfca1d7aa"),
+	"artist" : "Scorpions",
+	"albums" : [
+		{
+			"title" : "Lovedrive",
+			"year" : 1984
+		},
+		{
+			"title" : "Blackout",
+			"year" : 1987
+		},
+		{
+			"title" : "Love at first sting",
+			"year" : 1989
+		},
+		{
+			"title" : "Eye to Eye",
+			"year" : 2004
+		}
+	],
+	"singers" : "Klaus Meine",
+	"Guitarist" : "Mathias Jabs"
+}
+
+db.music.updateOne({artist: "Pink Floyd"}, {$pull: {"albums": {title: "The Wall"}}});
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+
+db.music.updateMany({}, {$pull: {"albums": {"year": {$gte: 1970, $lte: 1979}}}});
+{ "acknowledged" : true, "matchedCount" : 4, "modifiedCount" : 4 }
+
+db.music.find().pretty();
+{
+	"_id" : ObjectId("608335f3f08caa048f4ad198"),
+	"artist" : "Pink Floyd",
+	"albums" : [
+		{
+			"title" : "The Division Bell",
+			"year" : 1994
+		}
+	],
+	"singers" : "David Gilmore and Roger Waters",
+	"Guitarist" : [
+		"David Gilmore",
+		"Roger Waters"
+	]
+}
+{
+	"_id" : ObjectId("608335f3f08caa048f4ad199"),
+	"artist" : "Led Zeppelin",
+	"albums" : [
+		{
+			"title" : "Led Zeppelin I",
+			"year" : 1969
+		},
+		{
+			"title" : "Led Zeppelin 2",
+			"year" : 1969
+		}
+	],
+	"singers" : "Robert Plant",
+	"Guitarist" : "Jimmy Page"
+}
+{
+	"_id" : ObjectId("608335f3f08caa048f4ad19a"),
+	"artist" : "AC/DC",
+	"albums" : [
+		{
+			"title" : "Back in Black",
+			"year" : 1980
+		}
+	],
+	"singers" : "Bon Scott",
+	"Guitarist" : "Malcolm Young"
+}
+{
+	"_id" : ObjectId("608335f3f08caa048f4ad19b"),
+	"artist" : "Rush",
+	"albums" : [
+		{
+			"title" : "Moving Pictures",
+			"year" : 1981
+		}
+	],
+	"singers" : "Geddy Lee",
+	"Guitarist" : "Alex Lifeson"
+}

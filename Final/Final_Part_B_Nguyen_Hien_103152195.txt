@@ -1,0 +1,91 @@
+-- ***********************
+-- Name: Hien Dao The Nguyen
+-- ID: 103 152 195
+-- Date: 04 - 23 - 2021
+-- Purpose: Final Part B DBS311NFF
+-- ***********************
+
+use music_database;
+
+// Question 1
+// Load in the documents into a collection called “music” from the dbs311.final.json file
+// Q1 Solution
+db.music.find().pretty();
+
+// Question 2
+// Insert a new document into the collection, following the same structure as in the music collection, as follows:
+// Artist is “Scorpions”
+// Albums are: “Lovedrive” in 1979; “Blackout” in 1982, “Love at first sting” in 1984, “Eye to Eye” in 1999
+// Singer is: Klaus Meine
+// Q2 Solution
+db.music.insertOne({
+    artist: "Scorpions",
+    albums: [
+        {title: "Lovedrive", year: 1979},
+        {title: "Blackout", year: 1982},
+        {title: "Love at first sting", year: 1984},
+        {title: "Eye to Eye", year: 1999}
+    ],
+    singers: "Klaus Meine"
+});
+
+db.music.find().pretty();
+
+// Question 3
+// Run a query which will output all of the bands and albums which hit the market in either the 1960s OR the 1990s.
+// The result set should include band, album title and year – nothing else (ie: no “_Id”)
+// Q3 Solution
+db.music.find(
+    {albums: {$elemMatch: {$or: [
+        {year: {$gte: 1960, $lte: 1969}},
+        {year: {$gte: 1990, $lte: 1999}}
+    ]}}},
+    {artist: 1,
+     albums: {$elemMatch: {$or: [
+        {year: {$gte: 1960, $lte: 1969}},
+        {year: {$gte: 1990, $lte: 1999}}
+    ]}},
+_id: 0}).pretty();
+
+// Question 4
+// Run a query which reads a list of years and displays the bands and their albums which delivered in any year in the list
+// The result set should include band, album title and year – nothing else (ie: no “_id”)
+// Use a list of years which includes: 1971, 1973, 1975, 1977 and 1979
+// Q4 Solution
+const years = [1971, 1973, 1975, 1977, 1979];
+db.music.find({}, {artist: 1, albums: {$elemMatch: {year: {$in: years}}}, _id: 0}).pretty();
+
+// Question 5
+// Run a set of commands which will add in a new attribute to each document called “Guitarist”
+// The values should be as follows:
+// For Rush – the guitarist is “Alex Lifeson”
+// For Scorpions – the guitarist is “Mathias Jabs”
+// For AC/DC – the guitarist is “Malcolm Young”
+// For Pink Floyd – the guitarist is “David Gilmore” and “Roger Waters” (should be a list)
+// For Led Zeppelin – the guitarist is “Jimmy Page”
+// Q5 Solution
+db.music.updateOne({artist: "Rush"}, {$set: {Guitarist: "Alex Lifeson"}});
+db.music.updateOne({artist: "Scorpions"}, {$set: {Guitarist: "Mathias Jabs"}});
+db.music.updateOne({artist: "AC/DC"}, {$set: {Guitarist: "Malcolm Young"}});
+db.music.updateOne({artist: "Pink Floyd"}, {$set: {Guitarist: ["David Gilmore", "Roger Waters"]}});
+db.music.updateOne({artist: "Led Zeppelin"}, {$set: {Guitarist: "Jimmy Page"}});
+db.music.find().pretty();
+
+// Question 6
+// Run a query which shows each album and the year from the Scorpions
+// Run a command which increments each of the years by 5 for every album by Scorprions
+// Run a query which shows each album and the year from the Scorpions
+// Q6 Solution
+db.music.find({artist: "Scorpions"}, {albums: 1, _id: 0}).pretty();
+db.music.updateMany({artist: "Scorpions"}, {$inc: {"albums.$[].year": 5}});
+db.music.find({artist: "Scorpions"}, {albums: 1, _id: 0}).pretty();
+
+// Question 7
+// Run a command which removes the document for the Scorpions
+// Run a command which removes the album “The Wall” from Pink Floyd
+// Run a command which removes all albums that hit the market in the 1970s from all bands
+// Q7 Solution
+db.music.findOneAndDelete({artist: "Scorpions"});
+db.music.updateOne({artist: "Pink Floyd"}, {$pull: {"albums": {title: "The Wall"}}});
+db.music.updateMany({}, {$pull: {"albums": {"year": {$gte: 1970, $lte: 1979}}}});
+db.music.find().pretty();

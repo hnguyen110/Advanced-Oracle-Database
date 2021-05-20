@@ -1,0 +1,203 @@
+
+Last Name      
+---------------
+Jones
+Scoutten
+Smith
+
+
+Employ
+------
+200340
+200330
+200310
+200280
+200240
+200220
+200170
+200140
+200120
+200010
+
+10 rows selected. 
+
+
+EMPNO  FIRSTNAME    M LASTNAME        WOR PHON HIREDATE JOB         EDLEVEL S BIRTHDAT     SALARY      BONUS       COMM
+------ ------------ - --------------- --- ---- -------- -------- ---------- - -------- ---------- ---------- ----------
+000010 CHRISTINE    I HAAS            A00 3978 95-01-01 PRES             18 F 63-08-24     152750       1000       4220
+000020 MICHAEL      L THOMPSON        B01 3476 03-10-10 MANAGER          18 M 78-02-02      94250        800       3300
+000030 SALLY        A KWAN            C01 4738 05-04-05 MANAGER          20 F 71-05-11      98250        800       3060
+000050 JOHN         B GEYER           E01 6789 79-08-17 MANAGER          16 M 55-09-15      80175        800       3214
+000060 IRVING       F STERN           D11 6423 03-09-14 MANAGER          16 M 75-07-07      72250        500       2580
+000070 EVA          D PULASKI         D21 7831 05-09-30 MANAGER          16 F 03-05-26      96170        700       2893
+000090 EILEEN       W HENDERSON       E11 5498 00-08-15 MANAGER          16 F 71-05-15      89750        600       2380
+000100 THEODORE     Q SPENSER         E21 0972 00-06-19 MANAGER          14 M 80-12-18      86150        500       2092
+000110 VINCENZO     G LUCCHESSI       A00 3490 88-05-16 SALESREP         19 M 59-11-05      66500        900       3720
+000120 SEAN           O'CONNELL       A00 2167 93-12-05 CLERK            14 M 72-10-18      49250        600       2340
+000130 DELORES      M QUINTANA        C01 4578 01-07-28 ANALYST          16 F 55-09-15      73800        500       1904
+
+EMPNO  FIRSTNAME    M LASTNAME        WOR PHON HIREDATE JOB         EDLEVEL S BIRTHDAT     SALARY      BONUS       COMM
+------ ------------ - --------------- --- ---- -------- -------- ---------- - -------- ---------- ---------- ----------
+000140 HEATHER      A NICHOLLS        C01 1793 06-12-15 ANALYST          18 F 76-01-19      68420        600       2274
+000150 BRUCE          ADAMSON         D11 4510 02-02-12 DESIGNER         16 M 77-05-17      55280        500       2022
+000160 ELIZABETH    R PIANKA          D11 3782 06-10-11 DESIGNER         17 F 80-04-12      62250        400       1780
+000170 MASATOSHI    J YOSHIMURA       D11 2890 99-09-15 DESIGNER         16 M 81-01-05      44680        500       1974
+000180 MARILYN      S SCOUTTEN        D11 1682 03-07-07 DESIGNER         17 F 79-02-21      51340        500       1707
+000190 JAMES        H WALKER          D11 2986 04-07-26 DESIGNER         16 M 82-06-25      50450        400       1636
+000200 DAVID          BROWN           D11 4501 02-03-03 DESIGNER         16 M 71-05-29      57740        600       2217
+000210 WILLIAM      T JONES           D11 0942 98-04-11 DESIGNER         17 M 03-02-23      68270        400       1462
+000220 JENNIFER     K LUTZ            D11 0672 98-08-29 DESIGNER         18 F 78-03-19      49840        600       2387
+000230 JAMES        J JEFFERSON       D21 2094 96-11-21 CLERK            14 M 80-05-30      42180        400       1774
+000240 SALVATORE    M MARINO          D21 3780 04-12-05 CLERK            17 M 02-03-31      48760        600       2301
+
+EMPNO  FIRSTNAME    M LASTNAME        WOR PHON HIREDATE JOB         EDLEVEL S BIRTHDAT     SALARY      BONUS       COMM
+------ ------------ - --------------- --- ---- -------- -------- ---------- - -------- ---------- ---------- ----------
+000250 DANIEL       S SMITH           D21 0961 99-10-30 CLERK            15 M 69-11-12      49180        400       1534
+000260 SYBIL        P JOHNSON         D21 8953 05-09-11 CLERK            16 F 76-10-05      47250        300       1380
+000270 MARIA        L PEREZ           D21 9001 06-09-30 CLERK            15 F 03-05-26      37380        500       2190
+000280 ETHEL        R SCHNEIDER       E11 8997 97-03-24 OPERATOR         17 F 76-03-28      36250        500       2100
+000290 JOHN         R PARKER          E11 4502 06-05-30 OPERATOR         12 M 85-07-09      35340        300       1227
+000300 PHILIP       X SMITH           E11 2095 02-06-19 OPERATOR         14 M 76-10-27      37750        400       1420
+000310 MAUDE        F SETRIGHT        E11 3332 94-09-12 OPERATOR         12 F 61-04-21      35900        300       1272
+000320 RAMLAL       V MEHTA           E21 9990 95-07-07 FIELDREP         16 M 62-08-11      39950        400       1596
+000330 WING           LEE             E21 2103 06-02-23 FIELDREP         14 M 71-07-18      45370        500       2030
+000340 JASON        R GOUNOT          E21 5698 77-05-05 FIELDREP         16 M 56-05-17      43840        500       1907
+200010 DIAN         J HEMMINGER       A00 3978 95-01-01 SALESREP         18 F 73-08-14      46500       1000       4220
+
+EMPNO  FIRSTNAME    M LASTNAME        WOR PHON HIREDATE JOB         EDLEVEL S BIRTHDAT     SALARY      BONUS       COMM
+------ ------------ - --------------- --- ---- -------- -------- ---------- - -------- ---------- ---------- ----------
+200120 GREG           ORLANDO         A00 2167 02-05-05 CLERK            14 M 72-10-18      39250        600       2340
+200140 KIM          N NATZ            C01 1793 06-12-15 ANALYST          18 F 76-01-19      68420        600       2274
+200170 KIYOSHI        YAMAMOTO        D11 2890 05-09-15 DESIGNER         16 M 81-01-05      64680        500       1974
+200220 REBA         K JOHN            D11 0672 05-08-29 DESIGNER         18 F 78-03-19      69840        600       2387
+200240 ROBERT       M MONTEVERDE      D21 3780 04-12-05 CLERK            17 M 84-03-31      37760        600       2301
+200280 EILEEN       R SCHWARTZ        E11 8997 97-03-24 OPERATOR         17 F 66-03-28      46250        500       2100
+200310 MICHELLE     F SPRINGER        E11 3332 94-09-12 OPERATOR         12 F 61-04-21      35900        300       1272
+200330 HELENA         WONG            E21 2103 06-02-23 FIELDREP         14 F 71-07-18      35370        500       2030
+200340 ROY          R ALONZO          E21 5698 97-07-05 FIELDREP         16 M 56-05-17      31840        500       1907
+
+42 rows selected. 
+
+
+Table EMPLOYEE altered.
+
+
+42 rows updated.
+
+
+Table EMPLOYEE altered.
+
+
+Employ First Name   M Last Name       Dep Phon Hire Date   Position Education Level S Birth Da     Salary      Bonus Commission Phone Number 
+------ ------------ - --------------- --- ---- ----------- -------- --------------- - -------- ---------- ---------- ---------- -------------
+000250 DANIEL       S SMITH           D21 0961 30-OCT-1999 CLERK                 15 M 69-11-12      49180        400       1534 416-123-0961 
+000300 PHILIP       X SMITH           E11 2095 19-JUN-2002 OPERATOR              14 M 76-10-27      37750        400       1420 416-123-2095 
+
+
+Commit complete.
+
+
+Employee ID Employee  Employee Department Years Of Empployment Posit
+----------- --------- ------------------- -------------------- -----
+         20 Pernal                     20                    8 Sales
+        190 Sneider                    20                    8 Clerk
+         40 O'Brien                    38                    6 Sales
+        220 Smith                      51                    7 Sales
+        310 Graham                     66                   13 Sales
+
+
+        ID Name      Department Posit Years Of Employment Salary               Commission
+---------- --------- ---------- ----- ------------------- -------------------- ----------
+       330 Burke             66 Clerk                   1           $49,988.00       55.5
+       320 Gonzales          66 Sales                   4           $76,858.20        844
+       270 Lea               66 Mgr                     9           $88,555.50          0
+       280 Wilson            66 Sales                   9           $78,674.50      811.5
+
+
+Name                          Job      Variable Pay        
+----------------------------- -------- --------------------
+Christine, Haas               Pres                $5,220.00
+Dian, Hemminger               Salesrep            $5,220.00
+Vincenzo, Lucchessi           Salesrep            $4,620.00
+Michael, Thompson             Manager             $4,100.00
+Reba, John                    Designer            $2,987.00
+Jennifer, Lutz                Designer            $2,987.00
+Sean, O'Connell               Clerk               $2,940.00
+Greg, Orlando                 Clerk               $2,940.00
+Kim, Natz                     Analyst             $2,874.00
+Heather, Nicholls             Analyst             $2,874.00
+Ethel, Schneider              Operator            $2,600.00
+
+Name                          Job      Variable Pay        
+----------------------------- -------- --------------------
+Eileen, Schwartz              Operator            $2,600.00
+Theodore, Spenser             Manager             $2,592.00
+Wing, Lee                     Fieldrep            $2,530.00
+Helena, Wong                  Fieldrep            $2,530.00
+Delores, Quintana             Analyst             $2,404.00
+Ramlal, Mehta                 Fieldrep            $1,996.00
+William, Jones                Designer            $1,862.00
+Sybil, Johnson                Clerk               $1,680.00
+John, Parker                  Operator            $1,527.00
+
+20 rows selected. 
+
+
+NAME     
+---------
+Abrahams
+Daniels
+Davis
+Edwards
+Gonzales
+Hanes
+James
+Jones
+Quill
+Sanders
+Williams
+
+NAME     
+---------
+Wilson
+
+12 rows selected. 
+
+
+Employee  Job   Salary            Commission          
+--------- ----- ----------------- --------------------
+Abrahams  Clerk           $37,010              $236.50
+Burke     Clerk           $49,988               $55.50
+Gafney    Clerk           $43,031              $188.00
+James     Clerk           $43,505              $128.20
+Kermisch  Clerk           $42,259              $110.10
+Naughton  Clerk           $42,955              $180.00
+Ngan      Clerk           $42,508              $206.60
+Scoutten  Clerk           $41,509               $84.20
+Sneider   Clerk           $34,253              $126.50
+Wheeler   Clerk           $74,460              $513.30
+Yamaguchi Clerk           $40,506               $75.60
+
+11 rows selected. 
+
+
+Average Compensation Job     
+-------------------- --------
+          $40,813.33 FIELDREP
+          $43,850.00 OPERATOR
+          $59,891.60 DESIGNER
+          $61,420.00 SALESREP
+          $72,930.67 ANALYST 
+          $92,078.67 MANAGER 
+         $157,970.00 PRES    
+
+7 rows selected. 
+
+
+First Name   Last Name       Hire Date   Education Level Years Of Employment
+------------ --------------- ----------- --------------- -------------------
+MARILYN      SCOUTTEN        07-JUL-2003              17                   0
+WILLIAM      JONES           11-APR-1998              17                  12
+DANIEL       SMITH           30-OCT-1999              15                   7
+PHILIP       SMITH           19-JUN-2002              14                   7
+

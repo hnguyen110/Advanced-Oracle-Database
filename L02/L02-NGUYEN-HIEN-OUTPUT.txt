@@ -1,0 +1,97 @@
+
+JOB_TITLE                                                                                                                                                                                                                                                        EMPLOYEES
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------
+Accounting Manager                                                                                                                                                                                                                                                       1
+President                                                                                                                                                                                                                                                                1
+Marketing Manager                                                                                                                                                                                                                                                        1
+Public Accountant                                                                                                                                                                                                                                                        1
+Human Resources Representative                                                                                                                                                                                                                                           1
+Purchasing Manager                                                                                                                                                                                                                                                       1
+Finance Manager                                                                                                                                                                                                                                                          1
+Administration Assistant                                                                                                                                                                                                                                                 1
+Marketing Representative                                                                                                                                                                                                                                                 1
+Public Relations Representative                                                                                                                                                                                                                                          1
+Administration Vice President                                                                                                                                                                                                                                            2
+
+JOB_TITLE                                                                                                                                                                                                                                                        EMPLOYEES
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------
+Stock Manager                                                                                                                                                                                                                                                            5
+Programmer                                                                                                                                                                                                                                                               5
+Purchasing Clerk                                                                                                                                                                                                                                                         5
+Accountant                                                                                                                                                                                                                                                               5
+Sales Manager                                                                                                                                                                                                                                                            5
+Stock Clerk                                                                                                                                                                                                                                                             20
+Shipping Clerk                                                                                                                                                                                                                                                          20
+Sales Representative                                                                                                                                                                                                                                                    30
+
+19 rows selected. 
+
+
+      HIGH        LOW    AVERAGE High Low Difference
+---------- ---------- ---------- -------------------
+      5000        100    1894.67                4900
+
+
+  ORDER_ID TOTAL_ITEMS TOTAL_AMOUNT
+---------- ----------- ------------
+        70         727   1278962.17
+        46        1032   1269323.77
+        78         585   1198331.59
+         1        1343   1143716.87
+        68         885   1088670.12
+        27        1203   1084871.49
+        32         747   1081679.88
+        92         790   1050939.97
+        59         881   1043144.72
+
+9 rows selected. 
+
+
+WAREHOUSE_ID WAREHOUSE_NAME                                                                                                                                                                                                                                                  TOTAL_PRODUCTS
+------------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------
+           1 Southlake, Texas                                                                                                                                                                                                                                                          5483
+           2 San Francisco                                                                                                                                                                                                                                                            28613
+           3 New Jersey                                                                                                                                                                                                                                                                7252
+           4 Seattle, Washington                                                                                                                                                                                                                                                      14860
+           5 Toronto                                                                                                                                                                                                                                                                  12969
+           6 Sydney                                                                                                                                                                                                                                                                   20457
+           7 Mexico City                                                                                                                                                                                                                                                               9039
+           8 Beijing                                                                                                                                                                                                                                                                  13482
+           9 Bombay                                                                                                                                                                                                                                                                    7357
+
+9 rows selected. 
+
+
+Customer ID Customer Name                                                                                                                                                                                                                                                   Total Number Of Orders
+----------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------
+         44 Jabil Circuit                                                                                                                                                                                                                                                                        5
+         69 Whole Foods Market                                                                                                                                                                                                                                                                   1
+         58 Health Net                                                                                                                                                                                                                                                                           1
+        174 Oracle                                                                                                                                                                                                                                                                               0
+        196 DuPont                                                                                                                                                                                                                                                                               0
+        113 Microsoft                                                                                                                                                                                                                                                                            0
+        127 Alphabet                                                                                                                                                                                                                                                                             0
+        117 Home Depot                                                                                                                                                                                                                                                                           0
+        158 Owens & Minor                                                                                                                                                                                                                                                                        0
+        255 Waste Management                                                                                                                                                                                                                                                                     0
+         27 Assurant                                                                                                                                                                                                                                                                             0
+
+Customer ID Customer Name                                                                                                                                                                                                                                                   Total Number Of Orders
+----------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------
+        260 Occidental Petroleum                                                                                                                                                                                                                                                                 0
+        129 Target                                                                                                                                                                                                                                                                               0
+        226 Office Depot                                                                                                                                                                                                                                                                         0
+        197 Avnet                                                                                                                                                                                                                                                                                0
+         88 Walmart                                                                                                                                                                                                                                                                              0
+        128 Comcast                                                                                                                                                                                                                                                                              0
+
+17 rows selected. 
+
+
+CATEGORY_ID TOTAL_AMOUNT AVERAGE_AMOUNT
+----------- ------------ --------------
+          1     20041993      126050.27
+          2   13787520.6      131309.72
+          4   4918418.15       35640.71
+          5   13994160.8       53209.74
+
